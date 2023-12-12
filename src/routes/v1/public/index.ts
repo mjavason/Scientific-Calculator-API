@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
-import authRoute from './math.route';
+import mathRoute from './math.route';
 
-router.use('/auth', authRoute);
+router.use('/math', mathRoute);
 
 export default router;

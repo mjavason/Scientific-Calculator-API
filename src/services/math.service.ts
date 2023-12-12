@@ -1,4 +1,5 @@
 import { MESSAGES } from '../constants';
+import { calculateFactorial } from '../helpers/math.helper';
 
 class MathService {
   async solveQuadraticEquation(A: number, B: number, C: number): Promise<any> {
@@ -17,8 +18,21 @@ class MathService {
     // Implement your exponential function calculation logic using the provided variable
   }
 
-  async calculatePermutations(n: number, r: number): Promise<any> {
-    // Implement your permutations calculation logic using the provided variables
+  async calculatePermutations(n: number, r: number): Promise<number> {
+    if (n < 0 || r < 0 || r > n) {
+      throw new Error('Invalid values for n and r. Ensure n >= 0, r >= 0, and r <= n.');
+    }
+
+    // Calculate n!
+    const nFactorial = await calculateFactorial(n);
+
+    // Calculate (n-r)!
+    const nMinusRFactorial = await calculateFactorial(n - r);
+
+    // Calculate P(n, r) = n! / (n-r)!
+    const permutations = nFactorial / nMinusRFactorial;
+
+    return permutations;
   }
 
   async calculateLogarithmicFunction(base: number, x: number): Promise<any> {

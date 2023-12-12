@@ -8,7 +8,7 @@
 /**
  * @swagger
  * paths:
- *   /quadratic-formula:
+ *   /math/quadratic-formula:
  *     post:
  *       summary: Solve the quadratic equation
  *       description: |
@@ -64,7 +64,7 @@
 /**
  * @swagger
  * paths:
- *   /pythagorean-theorem:
+ *   /math/pythagorean-theorem:
  *     post:
  *       summary: Calculate the length of the hypotenuse
  *       description: |
@@ -115,7 +115,7 @@
 /**
  * @swagger
  * paths:
- *   /matrix-multiplication:
+ *   /math/matrix-multiplication:
  *     post:
  *       summary: Perform matrix multiplication
  *       description: |
@@ -178,7 +178,7 @@
 /**
  * @swagger
  * paths:
- *   /fibonacci-sequence:
+ *   /math/fibonacci-sequence:
  *     post:
  *       summary: Generate Fibonacci sequence
  *       description: |
@@ -226,7 +226,7 @@
 /**
  * @swagger
  * paths:
- *   /factorial-calculation:
+ *   /math/factorial-calculation:
  *     post:
  *       summary: Calculate factorial
  *       description: |
@@ -272,7 +272,7 @@
 /**
  * @swagger
  * paths:
- *   /exponential-function:
+ *   /math/exponential-function:
  *     post:
  *       summary: Calculate exponential function
  *       description: |
@@ -318,7 +318,7 @@
 /**
  * @swagger
  * paths:
- *   /permutations-calculation:
+ *   /math/permutations-calculation:
  *     post:
  *       summary: Calculate permutations
  *       description: |
@@ -371,7 +371,7 @@
 /**
  * @swagger
  * paths:
- *   /logarithmic-function:
+ *   /math/logarithmic-function:
  *     post:
  *       summary: Calculate logarithmic function
  *       description: |
