@@ -4,5 +4,5 @@
 // export { whatever } from './whatever';
 
 export { authValidation } from './auth.validation';
-export { bookValidation } from './book.validation';
+export { bookValidation } from './math.validation';
 export { objectIdValidation } from './object_id.validation';

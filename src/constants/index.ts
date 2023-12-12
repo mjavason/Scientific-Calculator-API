@@ -1,3 +1,6 @@
+export const APP_NAME = 'decadoaa';
+
+
 export const STATUS_CODES = {
   SUCCESS: '10000',
   FAILURE: '10001',

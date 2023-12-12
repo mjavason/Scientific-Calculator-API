@@ -3,10 +3,10 @@ export const SWAGGER_OPTIONS = {
   swaggerDefinition: {
     openapi: '3.0.0',
     info: {
-      title: 'File Reading API',
+      title: 'Math Formulas API',
       version: '1.0.0',
       description:
-        'Sequentially read text files in this API. Queue new submissions during processing. Email notifications on task completion.',
+        'API documentation for various math formulas. Solve quadratic equations, calculate hypotenuse, and more.',
       contact: {
         name: 'Orji Michael',
         email: 'orjimichael4886@gmail.com',
@@ -14,14 +14,15 @@ export const SWAGGER_OPTIONS = {
     },
     servers: [
       { url: 'http://localhost:5000/api/v1', description: 'Development' },
-      // { url: 'https://library-file-api.onrender.com/api/v1', description: 'Staging' },
-      // { url: 'https://api.fileexample.com/api/v1', description: 'Production' },
+      // { url: 'https://math-formulas-api.onrender.com/api/v1', description: 'Staging' },
+      // { url: 'https://api.mathformulas.com/api/v1', description: 'Production' },
     ],
-    // tags: [
-    //   { name: 'File Reading', description: 'Operations related to reading text files sequentially.' },
-    //   { name: 'Queue Management', description: 'Operations related to queuing new file submissions during processing.' },
-    //   { name: 'Email Notifications', description: 'Operations related to email notifications on task completion.' },
-    // ],
+    tags: [
+      {
+        name: 'Math Formulas',
+        description: 'Endpoints for various math formulas.',
+      },
+    ],
   },
   apis: ['**/*.jsdoc.ts'], // Define paths to your API routes
 };
