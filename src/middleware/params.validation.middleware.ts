@@ -13,10 +13,8 @@ export function validateParamsDTO(dtoClass: any) {
       if (errors.length > 0) {
         const errorMessage = errors.map((error: any) => {
           return {
-            [`${error.property}`]: {
-              error: `${error.property} has wrong value ${error.value}.`,
-              message: Object.values(error.constraints).join(', '),
-            },
+            message: `${error.property} has wrong value: ${error.value}`,
+            constraints: Object.values(error.constraints).join(', '),
           };
         });
 
